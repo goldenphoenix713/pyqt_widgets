@@ -112,8 +112,8 @@ class RangeSlider(QtWidgets.QSlider):
             opt = QtWidgets.QStyleOptionSlider()
             self.initStyleOption(opt)
 
-            # Only draw the groove for the first slider so it doesn't get drawn
-            # on top of the existing ones every time
+            # Only draw the groove for the first slider, so it doesn't get
+            # drawn on top of the existing ones every time
             if i == 0:
                 opt.subControls = (QtWidgets.QStyle.SC_SliderGroove
                                    | QtWidgets.QStyle.SC_SliderHandle)
@@ -153,7 +153,7 @@ class RangeSlider(QtWidgets.QSlider):
         button = event.button()
 
         # In a normal slider control, when the user clicks on a point in the
-        # slider's total range, but not on the slider part of the control the
+        # slider's total range, but not on the slider part of the
         # control would jump the slider value to where the user clicked.
         # For this control, clicks which are not direct hits will slide both
         # slider parts

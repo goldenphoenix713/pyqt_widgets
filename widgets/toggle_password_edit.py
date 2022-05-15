@@ -17,7 +17,7 @@ class TogglePasswordEdit(QtWidgets.QLineEdit):
         super(TogglePasswordEdit, self).__init__(*args, **kwargs)
 
         # Create two icons, one for hidden mode, and one for shown mode.
-        self._hidden = QtGui.QIcon('icons/noeye.png')
+        self._hidden = QtGui.QIcon('icons/no_eye.png')
         self._shown = QtGui.QIcon('icons/eye.png')
 
         # Create the action to toggle the echo state of the QLineEdit
